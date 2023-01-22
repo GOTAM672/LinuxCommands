@@ -2,9 +2,9 @@
 My learning of Linux Text Manipulation Tools in journey of DevOps learning.
 
 ## Table of Content
-<br>
 
 - [cat command](#cat-command)
+- [nl command](#nl-command)
 
 
 ## cat command
@@ -23,7 +23,7 @@ plums
 ```
 
 ```bash
-#Example of cat to append a file:
+# Example of cat to append a file:
 
 cat >> grocery.list
 carrots
@@ -31,17 +31,40 @@ carrots
 ```
 
 ```bash
-#Example of cat to display content of a file:
+# Example of cat to display content of a file:
 
 cat grocery.list
 ```
 
 ```bash
-#Example of cat to count lines:
+# Example of cat to count lines:
 
 cat ‑n grocery.list
 ```
 
+## nl command
 
+The nl command reads lines from stdin or from specific files.
 
+```bash
+# default usage of nl:
+
+nl grocery.list 
+```
+
+Use the -b flag to specify lines to be numbered. This flag takes as its argument a “type”. The type tells nl which lines need to be numbered – use ‘a’ to number all lines, ‘t’ tells nl to not number empty lines or lines that are only whitespace, ‘n’ specifies no lines be numbered. In the example a type of ‘p’ for pattern is shown. nl numbers the lines specified by a regular expression pattern, in this case, lines starting with the letters ‘a’ or ‘b’.
+
+```bash
+# nl to number lines conforming to a regex:
+
+nl ‑b p^[ba] grocery.list
+```
+
+By default, nl separates the line number from the text using a tab. Use -s to specify a different delimiter, such as the ‘=’ sign.
+
+```bash
+# nl to specify a delimiter:
+
+nl –s= grocery.list
+```
 
