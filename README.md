@@ -76,7 +76,6 @@ nl –s= grocery.list
 The wc (wordcount) command counts the number of lines, words (separated by whitespace), and characters in specified files, or from stdin. we can use flag -l, -w, -c to count only number of lines, number of words, and number of characters respectively.
 
 ```bash
-# nl to specify a delimiter:
 
 wc grocery.list
 wc ‑l grocery.list
