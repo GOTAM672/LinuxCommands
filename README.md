@@ -5,6 +5,8 @@ My learning of Linux Text Manipulation Tools in journey of DevOps learning.
 
 - [cat command](#cat-command)
 - [nl command](#nl-command)
+- [wc command](#wc-command)
+
 
 
 ## cat command
