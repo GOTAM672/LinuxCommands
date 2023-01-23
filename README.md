@@ -6,6 +6,9 @@ My learning of Linux Text Manipulation Tools in journey of DevOps learning.
 - [cat command](#cat-command)
 - [nl command](#nl-command)
 - [wc command](#wc-command)
+- [grep command](#grep-command)
+
+- [My learning Resources](#My-learning-Resources)
 
 
 
@@ -84,3 +87,25 @@ wc ‑c grocery.list
 ```
 
 
+## grep command
+
+The grep command searches specified files or stdin for patterns matching a given expression(s).
+
+```bash
+# To search apple in grocery.list and grocery.list2 files
+grep apple grocery.list grocery.list2
+
+```
+
+To display the filename with number of lines on which the pattern was found – in this case, count the number of lines the word ‘apple’ occurs in each file. we can use -c flag for this.
+
+```bash
+# grep - counting number of matches in files:
+grep ‑c apple grocery.list grocery.list2
+
+```
+
+
+## My learning Resources
+
+- [](https://developer.ibm.com/articles/au-unixtext/)
