@@ -108,4 +108,4 @@ grep ‑c apple grocery.list grocery.list2
 
 ## My learning Resources
 
-- [](https://developer.ibm.com/articles/au-unixtext/)
+- [Introduction to text manipulation on UNIX-based systems](https://developer.ibm.com/articles/au-unixtext/)
