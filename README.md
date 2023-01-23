@@ -104,8 +104,35 @@ To display the filename with number of lines on which the pattern was found – 
 grep ‑c apple grocery.list grocery.list2
 
 ```
+using the -h flag option, we can suppresses printing the filename as part of the output.
+
+```bash
+
+# grep - suppress filename in output:
+grep ‑h apple grocery.list grocery.list2
+
+```
+
+If you want to ignore case-sensitive search, then grep command has the -i option to ignore case-sensitivity when doing searches.
+
+```bash
+
+# grep – case insensitive:
+grep ‑i apple grocery.list grocery.list2
+
+```
+
+Sometimes, only the filename needs to be printed, not the pattern-matching line. grep provides the -l option to only print filenames containing lines with a matching pattern.
+
+```bash
+
+# grep – filenames only:
+grep ‑l apple grocery.list grocery.list2
+
+```
 
 
 ## My learning Resources
 
 - [Introduction to text manipulation on UNIX-based systems](https://developer.ibm.com/articles/au-unixtext/)
+- [Linux Filters](https://www.javatpoint.com/linux-filters)
