@@ -131,6 +131,34 @@ grep ‑l apple grocery.list grocery.list2
 
 ```
 
+Line numbers can be provided as part of the output by using the -n flag option.
+
+```bash
+
+# grep – include line numbers:
+grep ‑n carrot grocery.list grocery.list2
+
+```
+
+Sometimes the pattern desired forms a “word” surrounded by whitespace or other characters like a dash or parentheses. Most versions of grep provide a -w option to ease writing searches for these patterns.
+
+```bash
+
+# grep – word matching:
+grep ‑w apples grocery.list grocery.list2
+
+```
+
+There are times when lines not matching the pattern are the desired output. In such situations use the -v option.
+
+
+```bash
+
+# grep – inverted matching:
+grep ‑v beans grocery.list2
+
+```
+
 
 ## My learning Resources
 
